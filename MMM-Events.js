@@ -44,7 +44,7 @@ Module.register("MMM-Events", {
 
     getDom: function() {
     Log.log("In getDom events", this.hidden);
-       if (!this.hidden) {
+     //  if (!this.hidden) {
         var wrapper = document.createElement("div");
         wrapper.className = "wrapper";
         wrapper.style.maxWidth = this.config.maxWidth;
@@ -141,7 +141,7 @@ Module.register("MMM-Events", {
 
         }
         return wrapper;
-}
+//}
     },
 
     processEvents: function(data) {
@@ -201,7 +201,7 @@ Log.log("socketNotificationReceived EVENTS_RESULT");
 Log.log("socketNotificationReceived EVENTS_RESULT1");
 
 Log.log("position",this.data.position);
-            this.show(0);
+            this.show();
             this.updateDom();
         }
         //this.updateDom();
